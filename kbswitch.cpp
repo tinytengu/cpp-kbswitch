@@ -40,6 +40,8 @@ int main() {
     ShowWindow(consoleHandle, SW_HIDE);
 
     while(true) {
+        Sleep(100);
+
         HWND foregroundHandle = GetForegroundWindow();
         if(foregroundHandle == consoleHandle) {
             continue;
